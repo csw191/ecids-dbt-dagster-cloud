@@ -1,0 +1,6 @@
+locations:
+- build:
+    directory: ./ecids_dbt_dagster_cloud
+  code_source:
+    module_name: ecids_dbt_dagster_cloud.definitions
+  location_name: ecids_dbt_dagster_cloud
