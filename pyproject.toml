@@ -1,19 +1,21 @@
 [project]
 name = "ecids-dc"
 version = "0.1.0"
-description = "ECIDS DBT Daster Cloud"
+description = "ECIDS DBT Dagster Cloud"
 authors = [
-    {name = "CSW191",email = "joshua.parep@mt.gov"}
+    {name = "CSW191", email = "joshua.parep@mt.gov"}
 ]
 license = {text = "MIT"}
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.9, <3.14"
 dependencies = [
-    "dbt-snowflake (>=1.10.0,<2.0.0)",
-    "python-dotenv (>=1.1.1,<2.0.0)"
+    "dbt-snowflake>=1.10.0,<2.0.0",
+    "python-dotenv>=1.1.1,<2.0.0",
+    "dagster>=1.8.0",
+    "dagster-dbt>=0.24.0",
+    "dbt-core>=1.8.0"
 ]
-
-
+ 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
